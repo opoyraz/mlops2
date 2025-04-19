@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 
-df = pd.read_csv('/Users/omerpoyraz/venvs/mlops/virusTotal/mlops2/dataset.csv')
+df = pd.read_csv('/mlops/virusTotal/mlops2/dataset.csv')
 X = df.drop(columns=["Resource", "APT Group", "APTGroup"])
 y = df["APTGroup"]
 
